@@ -4,14 +4,15 @@ import Term from './Term';
 class Year extends Component {
 
 	render (){
-
-		return (
-			<Fragment>
-				<Term catalog={this.props.catalog} data={this.props.data['Fall']} term="Fall" year={this.props.year}/>
-				<Term catalog={this.props.catalog} data={this.props.data['Spring']} term="Spring" year={this.props.year + 1}/>
-				<Term catalog={this.props.catalog} data={this.props.data['Summer']} term="Summer" year={this.props.year + 1}/>
-			</Fragment>
-		);
+		if (this.props.data) {
+			return (
+				<Fragment>
+					<Term catalog={this.props.catalog} data={this.props.data.termsObj} term="Spring" year={this.props.year}/>
+					<Term catalog={this.props.catalog} data={this.props.data.termsObj} term="Summer" year={this.props.year}/>
+					<Term catalog={this.props.catalog} data={this.props.data.termsObj} term="Fall" year={this.props.year}/>
+				</Fragment>
+			);
+		}
 	}
 }
 export default Year;

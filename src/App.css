@@ -73,6 +73,7 @@ a {
     border-spacing: 5px;
     *border-collapse: expression('separate', cellSpacing = '5px');
     padding: 0;
+    margin-top: 2%;
 }
 
     #data-table thead th {
@@ -573,7 +574,7 @@ tr:nth-child(3n+2), tr:nth-child(3n+2) td.sorting_1 {
 .semester-class {
     border-radius: 10px;
     height: 14px;
-    font-size: 13px;
+    font-size: 12px;
     color: rgb(155, 4, 4);
     background-color: transparent;
     text-indent: 6px;
@@ -588,6 +589,7 @@ tr:nth-child(3n+2), tr:nth-child(3n+2) td.sorting_1 {
 
 .delete {
     float: right;
+    display: none;
 }
     
     .delete:hover {

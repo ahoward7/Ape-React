@@ -9,10 +9,11 @@ class UR extends Component {
 			if (plan.major === this.props.defMaj) {
 				return (
 					<Fragment>
-						<Year catalog={this.props.catalog} year={plan.startYear} data={this.props.data[plan.startYear]} />
-						<Year catalog={this.props.catalog} year={plan.startYear + 1} data={this.props.data[plan.startYear + 1]} />
-						<Year catalog={this.props.catalog} year={plan.startYear + 2} data={this.props.data[plan.startYear + 2]} />
-						<Year catalog={this.props.catalog} year={plan.startYear + 3} data={this.props.data[plan.startYear + 3]} />
+						<Year catalog={this.props.catalog} year={plan.startYear} data={this.props.data[0][0]} />
+						<Year catalog={this.props.catalog} year={plan.startYear + 1} data={this.props.data[0][1]} />
+						<Year catalog={this.props.catalog} year={plan.startYear + 2} data={this.props.data[0][2]} />
+						<Year catalog={this.props.catalog} year={plan.startYear + 3} data={this.props.data[0][3]} />
+						<Year catalog={this.props.catalog} year={plan.startYear + 4} data={this.props.data[0][4]} />
 					</Fragment>
 				);	
 			}
